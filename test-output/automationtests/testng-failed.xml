@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="10" name="Failed suite [automationtests]">
+  <test name="com.qa.tests.ui.tests(failed)">
+    <classes>
+      <class name="com.qa.tests.ui.tests.LoginTest">
+        <methods>
+          <include name="testVerifyRegisteredUserLoginBeforeAdminActivation"/>
+          <include name="testVerifyDuplicateCreateAccount"/>
+          <include name="setUp"/>
+          <include name="testVerifyUsernameField"/>
+          <include name="testVerifyCreateAccountFunctionality"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.tests.ui.tests.LoginTest -->
+    </classes>
+  </test> <!-- com.qa.tests.ui.tests(failed) -->
+</suite> <!-- Failed suite [automationtests] -->

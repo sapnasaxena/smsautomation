@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="automationtests" verbose="10"> 
+ 
+  <test name="com.qa.tests.ui.tests" preserve-order="true">
+    <classes>
+      <class name="com.qa.tests.ui.tests.LoginTest">
+      <!--  
+       <methods> 
+       <include name="testVerifyUsernameField"/>
+       <include name="testVerifyPasswordField"/>
+       <include name="testVerifyLoginButton"/>
+       <include name="testVerifyRememberMeCheckbox"/>
+       <include name="testVerifyRememberMeLabel"/>
+       <include name="testVerifyForgotPasswordLink"/>
+       <include name="testVerifyCreateAccountLink"/>
+       <include name="testVerifyLogin"/>
+       <include name="testVerifyErrorMessageonLoginWithoutUsername"/>
+       <include name="testVerifyErrorMessageonLoginOnLeavingfieldsBlank"/>
+       <include name="testVerifyErrorMessageonLoginWithInvalidCredentials"/>
+       <include name="testVerifyForgotPasswordFunctionality"/>
+       </methods>
+      --> 
+      </class>
+      <class name = "com.qa.tests.ui.tests.HomePageTest">
+      </class>
+      <class name ="com.qa.tests.ui.tests.DashBoardTest">
+      </class>
+       <class name ="com.qa.tests.ui.tests.PatientTest">
+      </class>
+      <class name ="com.qa.tests.ui.tests.ProfessionalTest">
+      </class>
+      <class name ="com.qa.tests.ui.tests.PaymentTest">
+      </class>
+      <class name ="com.qa.tests.ui.tests.SMSTest">
+      </class>
+      <class name ="com.qa.tests.ui.tests.PatientProfileTest">
+      </class>
+     <class name ="com.qa.tests.ui.tests.OrderTest">
+      </class>
+      <class name ="com.qa.tests.ui.tests.MissedCallTest">
+      </class>
+     <class name ="com.qa.tests.ui.tests.CasesTest">
+      </class>
+     <class name ="com.qa.tests.ui.tests.SettingsTest">
+      </class>
+      <class name ="com.qa.tests.ui.tests.ConfigurationTest">
+      </class>
+      
+    </classes>
+  </test>
+</suite>

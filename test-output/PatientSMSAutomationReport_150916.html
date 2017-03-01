@@ -1,0 +1,405 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.param,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.param td,table.param th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.param th {vertical-align:bottom}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.param td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.param tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi_attn">16</td><td class="numi">2,844.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<a id="summary"></a>
+<table cellspacing=0 cellpadding=0 class="passed">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Default test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="16">com.sms.DBTesting.SMSRouteTests<td><a href="#m1"><b>TC_Batch1_testVerifyPaymentSMSForManipalPatient</b>  </a></td><td class="numi">1</td><td>1473923007088</td><td class="numi">46521</td></tr><tr class="failedodd"><td><a href="#m2"><b>TC_Batch1_testVerifyPaymentSMSForPorteaPatient</b>  </a></td><td class="numi">1</td><td>1473923065574</td><td class="numi">41274</td></tr><tr class="failedodd"><td><a href="#m3"><b>TC_Batch1_testVerifySMSAppointmentCancelForManipalPatient</b>  </a></td><td class="numi">1</td><td>1473923119223</td><td class="numi">129833</td></tr><tr class="failedodd"><td><a href="#m4"><b>TC_Batch1_testVerifySMSAppointmentRescheduleForManipalPatient</b>  </a></td><td class="numi">1</td><td>1473923261441</td><td class="numi">245648</td></tr><tr class="failedodd"><td><a href="#m5"><b>TC_Batch1_testVerifySMSAppointmentSuccessfulForPorteaPatient</b>  </a></td><td class="numi">1</td><td>1473923518404</td><td class="numi">247386</td></tr><tr class="failedodd"><td><a href="#m6"><b>TC_Batch1_testVerifySMSForManipalPatientReminder</b>  </a></td><td class="numi">1</td><td>1473923777854</td><td class="numi">18887</td></tr><tr class="failedodd"><td><a href="#m7"><b>TC_Batch1_testVerifySMSForPatientReminder</b>  </a></td><td class="numi">1</td><td>1473923808395</td><td class="numi">66613</td></tr><tr class="failedodd"><td><a href="#m8"><b>TC_Batch1_testVerifySMSForRequestPaymentURLForPorteaPatient</b>  </a></td><td class="numi">1</td><td>1473923887118</td><td class="numi">64440</td></tr><tr class="failedodd"><td><a href="#m9"><b>TC_Batch1_testVerifySMSInvoiceGeneratedForManipalPatient</b>  </a></td><td class="numi">1</td><td>1473923963574</td><td class="numi">78040</td></tr><tr class="failedodd"><td><a href="#m10"><b>TC_Batch1_testVerifySMSInvoiceGeneratedForPorteaPatient</b>  </a></td><td class="numi">1</td><td>1473924053486</td><td class="numi">84473</td></tr><tr class="failedodd"><td><a href="#m11"><b>TC_Batch1_testVerifySMSOfRequestPaymentURLForManipalPatient</b>  </a></td><td class="numi">1</td><td>1473924149821</td><td class="numi">60154</td></tr><tr class="failedodd"><td><a href="#m12"><b>TC_Batch1_testVerifySMSOnAppointmentCancelledByPorteaPatient</b>  </a></td><td class="numi">1</td><td>1473924222312</td><td class="numi">252573</td></tr><tr class="failedodd"><td><a href="#m13"><b>TC_Batch2_testVerifyLeadSMS</b>  </a></td><td class="numi">1</td><td>1473924487428</td><td class="numi">10995</td></tr><tr class="failedodd"><td><a href="#m14"><b>TC_Batch3_testVerifySMSOnConvertLeadToPatient</b>  </a></td><td class="numi">1</td><td>1473924510610</td><td class="numi">32356</td></tr><tr class="failedodd"><td><a href="#m15"><b>TC_Batch3_testVerifySMSOnPharmacyOrder</b>  </a></td><td class="numi">1</td><td>1473924556174</td><td class="numi">164776</td></tr><tr class="failedodd"><td><a href="#m16"><b>TC_Batch6_testVerifyLinkWalletOTPSMS</b>  </a></td><td class="numi">1</td><td>1473924895870</td><td class="numi">177515</td></tr>
+<tr><th colspan="4">Default test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="2">com.sms.DBTesting.SMSRouteTests<td><a href="#m17"><b>TC_Batch6_testVerifyForgotPasswordOTPSMS</b>  </a></td><td class="numi">1</td><td>1473924757174</td><td class="numi">107753</td></tr><tr class="passedodd"><td><a href="#m18"><b>TC_Batch6_testVerifyRegistrationOTPSMS</b>  </a></td><td class="numi">1</td><td>1473925108663</td><td class="numi">728726</td></tr>
+</table>
+<h1>Default test</h1>
+<a id="m1"></a><h2>com.sms.DBTesting.SMSRouteTests:TC_Batch2_testVerifyLeadSMS</h2>
+<div style="padding-left:3em">
+<p>Modal dialog present: Please enter valid Mobile Number. Example - 9876543210.
+No need to add country code in the beginning.
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d31c7c56c340d6f45a76976d43506cd6cc&apos;, time: &apos;2014-06-03 10:52:47&apos;
+System info: host: &apos;sapna-testlead&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_65&apos;
+Session ID: dbdbb971-5e15-4bb2-8da2-d762345412cd
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createUnhandledAlertException(ErrorHandler.java:185)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:152)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+<br/>at com.sms.DBTesting.SMSRouteTests.TC_Batch2_testVerifyLeadSMS(SMSRouteTests.java:1044)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m2"></a><h2>com.sms.DBTesting.SMSRouteTests:TC_Batch1_testVerifySMSInvoiceGeneratedForPorteaPatient</h2>
+<div style="padding-left:3em">
+<p>expected:&lt;DearCustomer,Yourinvoiceforperiod2016-06-01to2016-06-30isgenerated.Pleasevisitmy.portea.comtodownloadyourinvoice.UseyourPatientIDPOR035079aslogin,ifyoudonthaveapassword,clickon&apos;CantLogIn&apos;togeneratenewpassword--PorteaMedical&gt; but was:&lt;DearCustomer,Yourinvoiceforperiod2016-06-01to2016-09-10isgenerated.Pleasevisitmy.portea.comtodownloadyourinvoice.UseyourPatientIDPOR035079aslogin,ifyoudonthaveapassword,clickon&apos;CantLogIn&apos;togeneratenewpassword--PorteaMedical&gt;</p>
+org.testng.Assert.fail(Assert.java:89)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:489)
+<br/>at org.testng.Assert.assertEquals(Assert.java:118)
+<br/>at org.testng.Assert.assertEquals(Assert.java:171)
+<br/>at org.testng.Assert.assertEquals(Assert.java:181)
+<br/>at com.sms.DBTesting.SMSRouteTests.TC_Batch1_testVerifySMSInvoiceGeneratedForPorteaPatient(SMSRouteTests.java:780)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m3"></a><h2>com.sms.DBTesting.SMSRouteTests:TC_Batch1_testVerifySMSAppointmentCancelForManipalPatient</h2>
+<div style="padding-left:3em">
+<p>expected:&lt;DearCustomer,WehavereceivedapaymentofRs1.Thankyou--ManipalHomecare&gt; but was:&lt;DearBhimashankartest,WehavereceivedanonlinepaymentofRs34for24HrNursing-ClassicappointmentofManipalPatientsms(MAN534783)ThankyouManipalHomecare&gt;</p>
+org.testng.Assert.fail(Assert.java:89)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:489)
+<br/>at org.testng.Assert.assertEquals(Assert.java:118)
+<br/>at org.testng.Assert.assertEquals(Assert.java:171)
+<br/>at org.testng.Assert.assertEquals(Assert.java:181)
+<br/>at com.sms.DBTesting.SMSRouteTests.TC_Batch1_testVerifySMSAppointmentCancelForManipalPatient(SMSRouteTests.java:524)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m4"></a><h2>com.sms.DBTesting.SMSRouteTests:TC_Batch3_testVerifySMSOnConvertLeadToPatient</h2>
+<div style="padding-left:3em">
+<p>null</p>
+com.sms.DBTesting.SMSRouteTests.TC_Batch3_testVerifySMSOnConvertLeadToPatient(SMSRouteTests.java:1082)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m5"></a><h2>com.sms.DBTesting.SMSRouteTests:TC_Batch1_testVerifySMSForRequestPaymentURLForPorteaPatient</h2>
+<div style="padding-left:3em">
+<p>expected:&lt;DearSapnasaxena,WehaveinitiatedanonlinepaymentrequestforthepaymentofRs1.00.Youcanmakethepaymentbyvisitingwww.portea.com/pay/1e579846Ifyouhaveanyqueries,youcanreachusat18001212323.YourPatientIdisPOR035079,pleaseusethisinallyourcommunicationwithPortea.PayonlineusingPorteaMobileApp!Downloadathttp://portea.com/downloadApp--PorteaMedical&gt; but was:&lt;&gt;</p>
+org.testng.Assert.fail(Assert.java:89)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:489)
+<br/>at org.testng.Assert.assertEquals(Assert.java:118)
+<br/>at org.testng.Assert.assertEquals(Assert.java:171)
+<br/>at org.testng.Assert.assertEquals(Assert.java:181)
+<br/>at com.sms.DBTesting.SMSRouteTests.TC_Batch1_testVerifySMSForRequestPaymentURLForPorteaPatient(SMSRouteTests.java:581)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m6"></a><h2>com.sms.DBTesting.SMSRouteTests:TC_Batch1_testVerifySMSAppointmentSuccessfulForPorteaPatient</h2>
+<div style="padding-left:3em">
+<p>Element is not currently visible and so may not be interacted with
+Command duration or timeout: 160.11 seconds
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d31c7c56c340d6f45a76976d43506cd6cc&apos;, time: &apos;2014-06-03 10:52:47&apos;
+System info: host: &apos;sapna-testlead&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_65&apos;
+Session ID: aa7a23ce-2f2c-4dac-878e-85825e0e8189
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+<br/>at com.qa.tests.ui.pages.AppointmentPage.selectProfessionalForNewAppt(AppointmentPage.java:1160)
+<br/>at com.sms.DBTesting.SMSRouteTests.TC_Batch1_testVerifySMSAppointmentSuccessfulForPorteaPatient(SMSRouteTests.java:225)
+<br/>25 lines not shown
+<p>Caused by Element is not currently visible and so may not be interacted with
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d31c7c56c340d6f45a76976d43506cd6cc&apos;, time: &apos;2014-06-03 10:52:47&apos;
+System info: host: &apos;sapna-testlead&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_65&apos;
+Driver info: driver.version: unknown</p>
+&lt;anonymous class&gt;.fxdriver.preconditions.visible(file:///C:/Users/sapna/AppData/Local/Temp/anonymous5598020073257042603webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:8791:5)
+<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/sapna/AppData/Local/Temp/anonymous5598020073257042603webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:11438:1)
+<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/sapna/AppData/Local/Temp/anonymous5598020073257042603webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:11455:11)
+<br/>at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/sapna/AppData/Local/Temp/anonymous5598020073257042603webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:407:5)
+<br/>1 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m7"></a><h2>com.sms.DBTesting.SMSRouteTests:TC_Batch1_testVerifySMSForManipalPatientReminder</h2>
+<div style="padding-left:3em">
+<p>The given selector //a[contains(@href,&apos;https://stageops.portea.com/patient/details/45254)] is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: Unable to locate an element with the xpath expression //a[contains(@href,&apos;https://stageops.portea.com/patient/details/45254)] because of the following error:
+[Exception... &quot;The expression is not a legal expression.&quot;  code: &quot;12&quot; nsresult: &quot;0x805b0033 (SyntaxError)&quot;  location: &quot;&lt;unknown&gt;&quot;]
+Command duration or timeout: 24 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d31c7c56c340d6f45a76976d43506cd6cc&apos;, time: &apos;2014-06-03 10:52:47&apos;
+System info: host: &apos;sapna-testlead&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_65&apos;
+Session ID: 5e89dcbe-b62b-4566-9549-8d571e7717c1
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+<br/>at com.sms.DBTesting.SMSRouteTests.TC_Batch1_testVerifySMSForManipalPatientReminder(SMSRouteTests.java:694)
+<br/>25 lines not shown
+<p>Caused by The given selector //a[contains(@href,&apos;https://stageops.portea.com/patient/details/45254)] is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: Unable to locate an element with the xpath expression //a[contains(@href,&apos;https://stageops.portea.com/patient/details/45254)] because of the following error:
+[Exception... &quot;The expression is not a legal expression.&quot;  code: &quot;12&quot; nsresult: &quot;0x805b0033 (SyntaxError)&quot;  location: &quot;&lt;unknown&gt;&quot;]
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d31c7c56c340d6f45a76976d43506cd6cc&apos;, time: &apos;2014-06-03 10:52:47&apos;
+System info: host: &apos;sapna-testlead&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_65&apos;
+Driver info: driver.version: unknown</p>
+&lt;anonymous class&gt;.FirefoxDriver.annotateInvalidSelectorError_(file:///C:/Users/sapna/AppData/Local/Temp/anonymous1658599665348943350webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:9444:5)
+<br/>at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/sapna/AppData/Local/Temp/anonymous1658599665348943350webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:9475:5)
+<br/>at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/sapna/AppData/Local/Temp/anonymous1658599665348943350webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:9479:3)
+<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/sapna/AppData/Local/Temp/anonymous1658599665348943350webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:11455:16)
+<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/sapna/AppData/Local/Temp/anonymous1658599665348943350webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:11460:7)
+<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/sapna/AppData/Local/Temp/anonymous1658599665348943350webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:11402:5)
+<br/>1 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m8"></a><h2>com.sms.DBTesting.SMSRouteTests:TC_Batch1_testVerifySMSOnAppointmentCancelledByPorteaPatient</h2>
+<div style="padding-left:3em">
+<p>Element is not currently visible and so may not be interacted with
+Command duration or timeout: 160.12 seconds
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d31c7c56c340d6f45a76976d43506cd6cc&apos;, time: &apos;2014-06-03 10:52:47&apos;
+System info: host: &apos;sapna-testlead&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_65&apos;
+Session ID: 3d4cbf99-2495-4d17-b50a-c7e43f4b18c1
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+<br/>at com.qa.tests.ui.pages.AppointmentPage.selectProfessionalForNewAppt(AppointmentPage.java:1160)
+<br/>at com.sms.DBTesting.SMSRouteTests.TC_Batch1_testVerifySMSOnAppointmentCancelledByPorteaPatient(SMSRouteTests.java:437)
+<br/>25 lines not shown
+<p>Caused by Element is not currently visible and so may not be interacted with
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d31c7c56c340d6f45a76976d43506cd6cc&apos;, time: &apos;2014-06-03 10:52:47&apos;
+System info: host: &apos;sapna-testlead&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_65&apos;
+Driver info: driver.version: unknown</p>
+&lt;anonymous class&gt;.fxdriver.preconditions.visible(file:///C:/Users/sapna/AppData/Local/Temp/anonymous7172458158039682791webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:8791:5)
+<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/sapna/AppData/Local/Temp/anonymous7172458158039682791webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:11438:1)
+<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/sapna/AppData/Local/Temp/anonymous7172458158039682791webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:11455:11)
+<br/>at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/sapna/AppData/Local/Temp/anonymous7172458158039682791webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:407:5)
+<br/>1 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m9"></a><h2>com.sms.DBTesting.SMSRouteTests:TC_Batch1_testVerifyPaymentSMSForPorteaPatient</h2>
+<div style="padding-left:3em">
+<p>No alert is present (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.27 seconds
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d31c7c56c340d6f45a76976d43506cd6cc&apos;, time: &apos;2014-06-03 10:52:47&apos;
+System info: host: &apos;sapna-testlead&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_65&apos;
+Session ID: 4dd86bd7-80a6-44c1-9c97-1a631b0d13cf
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:899)
+<br/>at com.sms.DBTesting.SMSRouteTests.TC_Batch1_testVerifyPaymentSMSForPorteaPatient(SMSRouteTests.java:182)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m10"></a><h2>com.sms.DBTesting.SMSRouteTests:TC_Batch6_testVerifyLinkWalletOTPSMS</h2>
+<div style="padding-left:3em">
+<p>Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@class,&apos;skip-rating&apos;)]&quot;}
+Command duration or timeout: 160.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d31c7c56c340d6f45a76976d43506cd6cc&apos;, time: &apos;2014-06-03 10:52:47&apos;
+System info: host: &apos;sapna-testlead&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_65&apos;
+Session ID: 0e79275c-b535-44ab-89f1-7b1fbdd9e18e
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+<br/>at com.sms.DBTesting.SMSRouteTests.TC_Batch6_testVerifyLinkWalletOTPSMS(SMSRouteTests.java:1124)
+<br/>25 lines not shown
+<p>Caused by Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@class,&apos;skip-rating&apos;)]&quot;}
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d31c7c56c340d6f45a76976d43506cd6cc&apos;, time: &apos;2014-06-03 10:52:47&apos;
+System info: host: &apos;sapna-testlead&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_65&apos;
+Driver info: driver.version: unknown</p>
+&lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/sapna/AppData/Local/Temp/anonymous9013850670338575885webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:9470:133)
+<br/>at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/sapna/AppData/Local/Temp/anonymous9013850670338575885webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:407:5)
+<br/>1 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m11"></a><h2>com.sms.DBTesting.SMSRouteTests:TC_Batch1_testVerifySMSOfRequestPaymentURLForManipalPatient</h2>
+<div style="padding-left:3em">
+<p>expected:&lt;DearCustomer,WehavereceivedapaymentofRs1.Thankyou--ManipalHomecare&gt; but was:&lt;DearBhimashankartest,WehavereceivedanonlinepaymentofRs34for24HrNursing-ClassicappointmentofManipalPatientsms(MAN534783)ThankyouManipalHomecare&gt;</p>
+org.testng.Assert.fail(Assert.java:89)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:489)
+<br/>at org.testng.Assert.assertEquals(Assert.java:118)
+<br/>at org.testng.Assert.assertEquals(Assert.java:171)
+<br/>at org.testng.Assert.assertEquals(Assert.java:181)
+<br/>at com.sms.DBTesting.SMSRouteTests.TC_Batch1_testVerifySMSOfRequestPaymentURLForManipalPatient(SMSRouteTests.java:636)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m12"></a><h2>com.sms.DBTesting.SMSRouteTests:TC_Batch1_testVerifySMSAppointmentRescheduleForManipalPatient</h2>
+<div style="padding-left:3em">
+<p>Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@id,&apos;appointment_dateTime&apos;)]&quot;}
+Command duration or timeout: 160.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d31c7c56c340d6f45a76976d43506cd6cc&apos;, time: &apos;2014-06-03 10:52:47&apos;
+System info: host: &apos;sapna-testlead&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_65&apos;
+Session ID: 892a8b15-9cd6-4e90-82cf-8e0134a6ab1d
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+<br/>at com.sms.DBTesting.SMSRouteTests.TC_Batch1_testVerifySMSAppointmentRescheduleForManipalPatient(SMSRouteTests.java:371)
+<br/>25 lines not shown
+<p>Caused by Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@id,&apos;appointment_dateTime&apos;)]&quot;}
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d31c7c56c340d6f45a76976d43506cd6cc&apos;, time: &apos;2014-06-03 10:52:47&apos;
+System info: host: &apos;sapna-testlead&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_65&apos;
+Driver info: driver.version: unknown</p>
+&lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/sapna/AppData/Local/Temp/anonymous1850216617198664468webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:9470:133)
+<br/>at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/sapna/AppData/Local/Temp/anonymous1850216617198664468webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:407:5)
+<br/>1 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m13"></a><h2>com.sms.DBTesting.SMSRouteTests:TC_Batch3_testVerifySMSOnPharmacyOrder</h2>
+<div style="padding-left:3em">
+<p>Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[contains(@class,&apos;cart-item-quantity input&apos;)]&quot;}
+Command duration or timeout: 160.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d31c7c56c340d6f45a76976d43506cd6cc&apos;, time: &apos;2014-06-03 10:52:47&apos;
+System info: host: &apos;sapna-testlead&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_65&apos;
+Session ID: e2075f7b-6067-4610-bae7-77adc8093bb0
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+<br/>at com.sms.DBTesting.SMSRouteTests.TC_Batch3_testVerifySMSOnPharmacyOrder(SMSRouteTests.java:1242)
+<br/>25 lines not shown
+<p>Caused by Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[contains(@class,&apos;cart-item-quantity input&apos;)]&quot;}
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d31c7c56c340d6f45a76976d43506cd6cc&apos;, time: &apos;2014-06-03 10:52:47&apos;
+System info: host: &apos;sapna-testlead&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_65&apos;
+Driver info: driver.version: unknown</p>
+&lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/sapna/AppData/Local/Temp/anonymous933223059710740275webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:9470:133)
+<br/>at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/sapna/AppData/Local/Temp/anonymous933223059710740275webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:407:5)
+<br/>1 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m14"></a><h2>com.sms.DBTesting.SMSRouteTests:TC_Batch1_testVerifySMSForPatientReminder</h2>
+<div style="padding-left:3em">
+<p>Modal dialog present: Please enter duration
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d31c7c56c340d6f45a76976d43506cd6cc&apos;, time: &apos;2014-06-03 10:52:47&apos;
+System info: host: &apos;sapna-testlead&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_65&apos;
+Session ID: dec2ed5e-d585-4869-b11c-b35984975a15
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createUnhandledAlertException(ErrorHandler.java:185)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:152)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+<br/>at com.qa.tests.ui.pages.AppointmentPage.addAppointmentForAlreadyAddedService(AppointmentPage.java:1221)
+<br/>at com.sms.DBTesting.SMSRouteTests.TC_Batch1_testVerifySMSForPatientReminder(SMSRouteTests.java:658)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m15"></a><h2>com.sms.DBTesting.SMSRouteTests:TC_Batch1_testVerifyPaymentSMSForManipalPatient</h2>
+<div style="padding-left:3em">
+<p>No alert is present (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.25 seconds
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d31c7c56c340d6f45a76976d43506cd6cc&apos;, time: &apos;2014-06-03 10:52:47&apos;
+System info: host: &apos;sapna-testlead&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_65&apos;
+Session ID: ebc09589-4dc3-4ed6-9ad9-4e50e3bec3aa
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.0}]</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:899)
+<br/>at com.sms.DBTesting.SMSRouteTests.TC_Batch1_testVerifyPaymentSMSForManipalPatient(SMSRouteTests.java:116)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m16"></a><h2>com.sms.DBTesting.SMSRouteTests:TC_Batch1_testVerifySMSInvoiceGeneratedForManipalPatient</h2>
+<div style="padding-left:3em">
+<p>expected:&lt;DearCustomer,Yourinvoiceforperiod2016-06-01to2016-09-10isgeneratedandsenttoyourregisteredemail-id.--ManipalHomecare&gt; but was:&lt;&gt;</p>
+org.testng.Assert.fail(Assert.java:89)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:489)
+<br/>at org.testng.Assert.assertEquals(Assert.java:118)
+<br/>at org.testng.Assert.assertEquals(Assert.java:171)
+<br/>at org.testng.Assert.assertEquals(Assert.java:181)
+<br/>at com.sms.DBTesting.SMSRouteTests.TC_Batch1_testVerifySMSInvoiceGeneratedForManipalPatient(SMSRouteTests.java:844)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m17"></a><h2>com.sms.DBTesting.SMSRouteTests:TC_Batch6_testVerifyRegistrationOTPSMS</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m18"></a><h2>com.sms.DBTesting.SMSRouteTests:TC_Batch6_testVerifyForgotPasswordOTPSMS</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

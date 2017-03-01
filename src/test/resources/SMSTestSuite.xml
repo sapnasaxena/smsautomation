@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+ 
+<suite name="SMSTestSuite">
+ 
+	<test name="SMSTests">
+	  <!--   <groups>
+      <run>
+      <include name="UItest" />
+      </run>
+   </groups>-->
+		<classes>
+		    <class name="com.sms.DBTesting.SMSRouteTests"/>
+
+                 </classes>
+
+	</test>
+
+	
+	
+	
+</suite> 	
